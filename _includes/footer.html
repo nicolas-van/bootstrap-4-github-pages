@@ -1,32 +1,33 @@
-<footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+<div class="container">
+  
+  <p class="h5">{{ site.title | escape }}</p>
+  
+  <div class="row">
 
-  <div class="wrapper">
+    <div class="col-sm">
+      <ul class="list-unstyled">
+        <li>
+          {%- if site.author -%}
+            {{ site.author | escape }}
+          {%- else -%}
+            {{ site.title | escape }}
+          {%- endif -%}
+        </li>
+        {%- if site.email -%}
+          <li>
+            <a href="mailto:{{ site.email }}">
+              {{ site.email }}
+            </a>
+          </li>
+        {%- endif -%}
+      </ul>
+    </div>
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-        </ul>
-      </div>
-
-
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
-      </div>
+    <div class="col-sm">
+      <p>{{- site.description | escape -}}</p>
     </div>
 
   </div>
 
-</footer>
+</div>
