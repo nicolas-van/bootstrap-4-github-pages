@@ -26,9 +26,10 @@ description: >- # this means to ignore newlines until "baseurl:"
 
 # Build settings
 markdown: kramdown
-theme: minima
 plugins:
   - jekyll-feed
+  
+theme: hanuman
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
