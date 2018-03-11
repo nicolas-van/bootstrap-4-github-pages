@@ -4,4 +4,6 @@
 
 const e = React.createElement;
 
+console.log("test");
+
 })();
