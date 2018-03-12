@@ -3,8 +3,12 @@ layout: default
 ---
 <article>
 
-  <h1>{{ page.title | escape }}</h1>
+  <header>
+    <h1>{{ page.title | escape }}</h1>
+  </header>
 
-  {{ content }}
+  <section>
+    {{ content }}
+  </section>
 
 </article>
