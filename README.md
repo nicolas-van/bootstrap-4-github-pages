@@ -1,5 +1,5 @@
 
-# Boostrap 4 Jekyl
+# Boostrap 4 Jekyll
 
 A Bootstrap 4 start up project for Jekyll and Github Pages
 
