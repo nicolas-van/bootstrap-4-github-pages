@@ -1,6 +1,6 @@
 #! /bin/sh
 
-rm -rf node_modules
+rm -rf node_modules package-lock.json
 npm install bootstrap@4 jquery@3
 
 rm -rf _sass/bootstrap
