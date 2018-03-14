@@ -1,15 +1,16 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
+    <a class="navbar-brand" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
-    <a class="navbar-brand" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    {%- if page_paths -%}
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
+      <ul class="navbar-nav ml-auto">
         {%- for path in page_paths -%}
           {%- assign my_page = site.pages | where: "path", path | first -%}
           {%- if my_page.title -%}
@@ -20,5 +21,6 @@
         {% endfor -%}
       </ul>
     </div>
+    {%- endif -%}
   </div>
 </nav>
