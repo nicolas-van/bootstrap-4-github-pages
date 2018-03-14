@@ -8,8 +8,8 @@ mkdir -p _sass/bootstrap
 cp -r node_modules/bootstrap/scss/* _sass/bootstrap
 touch _sass/bootstrap/__DO_NOT_MODIFY
 
-rm -rf js/bootstrap
-mkdir -p js/bootstrap
-cp node_modules/bootstrap/dist/js/bootstrap.bundle.min.* js/bootstrap/
-cp node_modules/jquery/dist/jquery.min.* js/bootstrap/
-touch js/bootstrap/__DO_NOT_MODIFY
+rm -rf assets/javascript/bootstrap
+mkdir -p assets/javascript/bootstrap
+cp node_modules/bootstrap/dist/js/bootstrap.bundle.min.* assets/javascript/bootstrap/
+cp node_modules/jquery/dist/jquery.min.* assets/javascript/bootstrap/
+touch assets/javascript/bootstrap/__DO_NOT_MODIFY
