@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Bootstrap 4 Jekyll
+title: Bootstrap 4 Github Pages
 email: ""
 description: >- # this means to ignore newlines until "baseurl:"
   A Bootstrap 4 start up project for Jekyll and Github Pages
@@ -22,7 +22,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 #twitter_username: jekyllrb
 #github_username:  jekyll
 
-repository: "nicolas-van/bootstrap-4-jekyll"
+repository: "nicolas-van/bootstrap-4-github-pages"
 
 # Build settings
 plugins:
