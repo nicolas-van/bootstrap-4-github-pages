@@ -3,7 +3,7 @@ layout: page
 title: Bootstrap 4 Github Pages
 ---
 
-A Bootstrap 4 start up project for [Github Pages](https://pages.github.com/) and [Jekyll](https://jekyllrb.com/).
+A [Bootstrap 4](https://getbootstrap.com/) start up project for [Github Pages](https://pages.github.com/) and [Jekyll](https://jekyllrb.com/).
 
 * A full Bootstrap 4 theme usable both on Github Pages and with a standalone Jekyll.
 * Recompiles Bootstrap from SCSS files, which allows to customize Bootstrap's variables and use Bootstrap themes.
@@ -69,7 +69,7 @@ Please note that, to ensure maximum compatibility with Github Pages, the `Gemfil
 
 Let's be honest, this theme uses a vanilla version of Bootstrap 4 and an unmodified Bootstrap is quite unpleasant to the eye. You want to change that.
 
-You can of course modify anything in the `_includes`, `_layouts` and `_sass` folders to customize both the HTML or CSS of your website. This is a normal part of web development and it is outside the scope of this guide.
+You can of course modify anything in the `_includes`, `_layouts` and `_sass` folders to customize both the HTML or CSS of your website, possibly referring to the [Bootstrap documentation](https://getbootstrap.com/) or the [Jekyll documentation](https://jekyllrb.com/) when needed. This is a normal part of web development and it is outside the scope of this guide.
 
 But if you don't know where to start I can recommend you to import a starting theme from [Bootswatch](https://bootswatch.com/).
 
