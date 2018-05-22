@@ -83,3 +83,7 @@ Please note that, to ensure maximum compatibility with Github Pages, the `Gemfil
 ## Known issues
 
 * Bootstrap 4 should normally be post-processed using [Autoprefixer](https://github.com/postcss/autoprefixer). Even if it is possible to use autoprefixer with Jekyll, it is not possible with a classic Github Pages installation without adding some kind of pre-processing before publication. Since this project mostly aims compatibility with Github Pages I prefer to keep it that way. The consequences of this choice is that some Bootstrap features could not work as expected on older browsers.
+
+## Websites using Bootstrap 4 Github Pages
+
+* [My personal blog](https://nicolas-van.github.io/)
