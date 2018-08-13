@@ -87,3 +87,7 @@ Please note that, to ensure maximum compatibility with Github Pages, the `Gemfil
 ## Websites using Bootstrap 4 Github Pages
 
 * [My personal blog](https://nicolas-van.github.io/)
+
+## Other projects
+
+[Easy Markdown to Github Pages](https://nicolas-van.github.io/easy-markdown-to-github-pages/) which document how to publish Markown files to Github Pages in the fastest way.
