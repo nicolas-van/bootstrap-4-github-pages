@@ -22,7 +22,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 #twitter_username: jekyllrb
 #github_username:  jekyll
 
-repository: "nicolas-van/bootstrap-4-github-pages"
+repository: "TheBaconing/rangerguide"
 
 # Build settings
 plugins:
@@ -30,7 +30,7 @@ plugins:
   - jekyll-sitemap
 
 # A list of the pages to display in the navigation bar
-header_pages:
+header_pages: index.html
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
