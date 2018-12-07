@@ -90,4 +90,4 @@ Please note that, to ensure maximum compatibility with Github Pages, the `Gemfil
 
 ## Other projects
 
-[Easy Markdown to Github Pages](https://nicolas-van.github.io/easy-markdown-to-github-pages/) which document how to publish Markown files to Github Pages in the fastest way.
+[Easy Markdown to Github Pages](https://nicolas-van.github.io/easy-markdown-to-github-pages/) which documents how to publish Markown files to Github Pages in the fastest way.
