@@ -1,4 +1,4 @@
 ---
 layout: page
-title: Bootstrap 4 Github Pages
+title: Notes on R
 ---
