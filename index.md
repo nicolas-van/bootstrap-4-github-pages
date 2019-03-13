@@ -46,20 +46,20 @@ Your Github Pages website with customizable Bootstrap 4 is now up and running, y
 
 You should at least edit the `_config.yml` file to edit your website's metadata, like the title, description and repository URL.
 
-### Customize your theme
+### Change your theme
 
-Let's be honest, this theme uses a vanilla version of Bootstrap 4 and an unmodified Bootstrap is quite unpleasant to the eye. You want to change that.
+This website uses the [Minty](https://bootswatch.com/minty/) Bootstrap theme by default. And you don't want to use the same theme everyone else uses do you?
 
 You can of course modify anything in the `_includes`, `_layouts` and `_sass` folders to customize both the HTML or CSS of your website, possibly referring to the [Bootstrap documentation](https://getbootstrap.com/) or the [Jekyll documentation](https://jekyllrb.com/) when needed. This is a normal part of web development and it is outside the scope of this guide.
 
-But if you don't know where to start I can recommend you to import a starting theme from [Bootswatch](https://bootswatch.com/).
+But if you don't know where to start I can recommend you to import a theme from [Bootswatch](https://bootswatch.com/).
 
 * Go on [Bootswatch](https://bootswatch.com/) and choose a theme that you like.
 * Using the top bar, download its `_variables.scss` and `_bootswatch.scss` files.
 * Copy the content of `_variables.scss` in `_sass/_variables.scss`.
 * Copy the content of `_bootswatch.scss` in `_sass/_bootstrap_customization.scss`.
 
-That's it, you now have a totally different appearance compared to a vanilla Bootstrap 4.
+That's it, you now have a totally different appearance for you website.
 
 ### Modify the content
 
