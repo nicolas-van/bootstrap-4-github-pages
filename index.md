@@ -92,6 +92,7 @@ Please note that, to ensure maximum compatibility with Github Pages, the `Gemfil
 
 * [My personal blog](https://nicolas-van.github.io/)
 * [the wavelet's profile](https://thewavelet.github.io/)
+* [roseblood.github.io](https://roseleblood.github.io/)
 
 ## Other projects
 
