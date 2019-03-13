@@ -91,7 +91,7 @@ Please note that, to ensure maximum compatibility with Github Pages, the `Gemfil
 ## Websites using Bootstrap 4 Github Pages
 
 * [My personal blog](https://nicolas-van.github.io/)
-* [The Wavelet](https://thewavelet.github.io/)
+* [the wavelet's profile](https://thewavelet.github.io/)
 
 ## Other projects
 
