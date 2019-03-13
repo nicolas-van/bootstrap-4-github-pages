@@ -94,6 +94,7 @@ Please note that, to ensure maximum compatibility with Github Pages, the `Gemfil
 * [the wavelet's profile](https://thewavelet.github.io/)
 * [roseblood.github.io](https://roseleblood.github.io/)
 * [colemannick.github.io](https://colemannick.github.io/)
+* [Betty and the Blushtones](http://bettyandtheblushtones.co.uk/)
 
 ## Other projects
 
