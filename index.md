@@ -96,6 +96,7 @@ Please note that, to ensure maximum compatibility with Github Pages, the `Gemfil
 * [colemannick.github.io](https://colemannick.github.io/)
 * [Betty and the Blushtones](http://bettyandtheblushtones.co.uk/)
 * [borislouis.github.io](https://borislouis.github.io/)
+* [dariusnwadike.github.io](https://dariusnwadike.github.io/)
 
 ## Other projects
 
