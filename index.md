@@ -3,8 +3,6 @@ layout: page
 title: GIS Portfolio 2019
 ---
 
-A [Bootstrap 4](https://getbootstrap.com/) start up project for [Github Pages](https://pages.github.com/) and [Jekyll](https://jekyllrb.com/).
-
 * 2019 Environmental GIS Portfolio, Southwestern University
 
 ### The Rancho
