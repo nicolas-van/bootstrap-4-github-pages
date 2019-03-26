@@ -7,13 +7,11 @@ A [Bootstrap 4](https://getbootstrap.com/) start up project for [Github Pages](h
 
 * 2019 Environmental GIS Portfolio, Southwestern University
 
-## Setup Guide
-
-### Fork this repository
+### The Rancho
 
 [Go to this repository page on Github](https://github.com/nicolas-van/bootstrap-4-github-pages) and click the `Fork` button on the top right of the page.
 
-### Rename your forked repository
+### Presidential Voting in Texas by State House District
 
 Here we have two possibilities:
 
