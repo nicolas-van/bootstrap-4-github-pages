@@ -3,7 +3,7 @@ layout: page
 title: GIS Portfolio 2019
 ---
 
-* 2019 Environmental GIS Portfolio, Southwestern University
+2019 Environmental GIS Portfolio, Southwestern University
 
 ### The Rancho
 
