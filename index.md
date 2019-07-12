@@ -86,7 +86,9 @@ Please note that, to ensure maximum compatibility with Github Pages, the `Gemfil
 
 ## How to contribute
 
-[See the contribution guide](https://github.com/nicolas-van/bootstrap-4-github-pages/blob/master/CONTRIBUTING.md).
+Like this project ? [Consider adding a star on Github](https://github.com/nicolas-van/bootstrap-4-github-pages).
+
+[You can also see the contribution guide](https://github.com/nicolas-van/bootstrap-4-github-pages/blob/master/CONTRIBUTING.md).
 
 ## Websites using Bootstrap 4 Github Pages
 
