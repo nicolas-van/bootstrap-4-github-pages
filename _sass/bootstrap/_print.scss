@@ -51,7 +51,7 @@
     }
     pre,
     blockquote {
-      border: $border-width solid $gray-500;   // Bootstrap custom code; using `$border-width` instead of 1px
+      border: $border-width solid $gray-500; // Bootstrap custom code; using `$border-width` instead of 1px
       page-break-inside: avoid;
     }
 
@@ -112,11 +112,28 @@
         background-color: $white !important;
       }
     }
+
     .table-bordered {
       th,
       td {
         border: 1px solid $gray-300 !important;
       }
+    }
+
+    .table-dark {
+      color: inherit;
+
+      th,
+      td,
+      thead th,
+      tbody + tbody {
+        border-color: $table-border-color;
+      }
+    }
+
+    .table .thead-dark th {
+      color: inherit;
+      border-color: $table-border-color;
     }
 
     // Bootstrap specific changes end
