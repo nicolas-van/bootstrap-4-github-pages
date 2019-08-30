@@ -33,7 +33,6 @@ plugins:
 header_pages:
   - name: About
     link: /about.html
-  
   - name: Sound
     link: /sound_projects.html
   
