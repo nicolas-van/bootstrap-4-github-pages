@@ -1,318 +1,160 @@
-// This is the place to place Bootstrap-related CSS customizations.
-// As example you can start by importing the _bootswatch.scss file from one of the
-// theme provided by https://bootswatch.com .
-
-// Minty 4.3.1
+// Lux 4.3.1
 // Bootswatch
+
 
 // Variables ===================================================================
 
-$web-font-path: "https://fonts.googleapis.com/css?family=Montserrat" !default;
+$web-font-path: "https://fonts.googleapis.com/css?family=Nunito+Sans:400,600" !default;
 @import url($web-font-path);
 
 // Navbar ======================================================================
 
 .navbar {
-  font-family: $headings-font-family;
+  font-size: $font-size-sm;
+  text-transform: uppercase;
+  font-weight: 600;
+
+  &-nav {
+    .nav-link {
+      padding-top: .715rem;
+      padding-bottom: .715rem;
+    }
+  }
+
+  &-brand {
+    margin-right: 2rem;
+  }
 }
 
-.bg-dark {
-  background-color: $secondary !important;
+.bg-primary {
+  background-color: $gray-900 !important;
 }
 
-.border-dark {
-  border-color: $secondary !important;
+.bg-light {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  &.navbar-fixed-top {
+    border-width: 0 0 1px 0;
+  }
+
+  &.navbar-bottom-top {
+    border-width: 1px 0 0 0;
+  }
+}
+
+.nav-item {
+  margin-right: 2rem;
 }
 
 // Buttons =====================================================================
 
 .btn {
-  font-family: $headings-font-family;
+  font-size: $font-size-sm;
+  text-transform: uppercase;
 
-  &,
-  &:hover {
+  &-sm {
+    font-size: 10px;
+  }
+
+  &-warning {
+    &,
+    &:hover,
+    &:not([disabled]):not(.disabled):active,
+    &:focus {
+      color: $white;
+    }
+  }
+}
+
+.btn-outline-secondary {
+  border-color: $gray-600;
+  color: $gray-600;
+
+  &:not([disabled]):not(.disabled):hover,
+  &:not([disabled]):not(.disabled):focus,
+  &:not([disabled]):not(.disabled):active {
+    background-color: $gray-400;
+    border-color: $gray-400;
     color: $white;
   }
 
-  &-light,
-  &-light:hover {
-    color: $gray-700;
+  &:not([disabled]):not(.disabled):focus {
+    box-shadow: 0 0 0 0.2rem rgba($gray-400, 0.5);
   }
+}
 
-  &-link,
-  &-link:hover {
-    color: $primary;
-  }
+[class*="btn-outline-"] {
+  border-width: 2px;
+}
 
-  &-link.disabled:hover {
-    color: $gray-600;
-  }
-
-  &-outline-primary {
-    color: $primary;
-  }
-
-  &-outline-secondary {
-    color: $secondary;
-  }
-
-  &-outline-success {
-    color: $success;
-  }
-
-  &-outline-info {
-    color: $info;
-  }
-
-  &-outline-warning {
-    color: $warning;
-  }
-
-  &-outline-danger {
-    color: $danger;
-  }
-
-  &-outline-dark {
-    color: $dark;
-  }
-
-  &-outline-light {
-    color: $light;
-  }
+.border-secondary {
+  border: 1px solid $gray-400 !important;
 }
 
 // Typography ==================================================================
 
+body {
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.text-secondary {
+  color: $body-color !important;
+}
+
 // Tables ======================================================================
 
+th {
+  font-size: $font-size-sm;
+  text-transform: uppercase;
+}
+
 .table {
-
-  &-primary,
-  &-secondary,
-  &-success,
-  &-info,
-  &-warning,
-  &-danger {
-    color: #fff;
+  th, td {
+    padding: 1.5rem;
   }
 
-  &-primary {
-    &, > th, > td {
-      background-color: $primary;
+  &-sm {
+    th, td {
+      padding: 0.75rem;
     }
-  }
-
-  &-secondary {
-    &, > th, > td {
-      background-color: $secondary;
-    }
-  }
-
-  &-light {
-    &, > th, > td {
-      background-color: $light;
-    }
-  }
-
-  &-dark {
-    &, > th, > td {
-      background-color: $dark;
-    }
-  }
-
-  &-success {
-    &, > th, > td {
-      background-color: $success;
-    }
-  }
-
-  &-info {
-    &, > th, > td {
-      background-color: $info;
-    }
-  }
-
-  &-danger {
-    &, > th, > td {
-      background-color: $danger;
-    }
-  }
-
-  &-warning {
-    &, > th, > td {
-      background-color: $warning;
-    }
-  }
-
-  &-active {
-    &, > th, > td {
-      background-color: $table-active-bg;
-    }
-  }
-
-  &-hover {
-
-    .table-primary:hover {
-      &, > th, > td {
-        background-color: darken($primary, 5%);
-      }
-    }
-
-    .table-secondary:hover {
-      &, > th, > td {
-        background-color: darken($secondary, 5%);
-      }
-    }
-
-    .table-light:hover {
-      &, > th, > td {
-        background-color: darken($light, 5%);
-      }
-    }
-
-    .table-dark:hover {
-      &, > th, > td {
-        background-color: darken($dark, 5%);
-      }
-    }
-
-    .table-success:hover {
-      &, > th, > td {
-        background-color: darken($success, 5%);
-      }
-    }
-
-    .table-info:hover {
-      &, > th, > td {
-        background-color: darken($info, 5%);
-      }
-    }
-
-    .table-danger:hover {
-      &, > th, > td {
-        background-color: darken($danger, 5%);
-      }
-    }
-
-    .table-warning:hover {
-      &, > th, > td {
-        background-color: darken($warning, 5%);
-      }
-    }
-
-    .table-active:hover {
-      &, > th, > td {
-        background-color: $table-active-bg;
-      }
-    }
-  }
-
-  .thead-dark th {
-    background-color: $primary;
-    border-color: $table-border-color;
-    font-family: $headings-font-family;
   }
 }
 
 // Forms =======================================================================
 
-legend {
-  font-family: $headings-font-family;
+
+.custom-switch {
+
+  .custom-control-label {
+    &::after {
+      top: calc(0.15625rem + 2px);
+      left: calc(-2.25rem + 2px);
+      width: calc(1rem - 4px);
+      height: calc(1rem - 4px);
+    }
+  }
 }
 
 // Navs ========================================================================
 
 .dropdown-menu {
-  font-family: $font-family-sans-serif;
-}
-
-.breadcrumb {
-  a {
-    color: $navbar-dark-color;
-  }
-
-  a:hover {
-    color: $white;
-    text-decoration: none;
-  }
+  font-size: $font-size-sm;
+  text-transform: none;
 }
 
 // Indicators ==================================================================
 
-.alert {
-  color: $white;
-
-  h1, h2, h3, h4, h5, h6 {
-    color: inherit;
-  }
-
-  a,
-  .alert-link {
-    color: $white;
-  }
-
-  &-primary {
-    &, > th, > td {
-      background-color: $primary;
-    }
-  }
-
-  &-secondary {
-    &, > th, > td {
-      background-color: $secondary;
-    }
-  }
-
-  &-success {
-    &, > th, > td {
-      background-color: $success;
-    }
-  }
-
-  &-info {
-    &, > th, > td {
-      background-color: $info;
-    }
-  }
-
-  &-danger {
-    &, > th, > td {
-      background-color: $danger;
-    }
-  }
-
-  &-warning {
-    &, > th, > td {
-      background-color: $warning;
-    }
-  }
-
-  &-dark {
-    &, > th, > td {
-      background-color: $dark;
-    }
-  }
-
-  &-light {
-    &, > th, > td {
-      background-color: $light;
-    }
-  }
-
-  &-light {
-    &,
-    & a:not(.btn),
-    & .alert-link {
-      color: $body-color;
-    }
-  }
-}
-
 .badge {
-  color: $white;
+  padding-top: 0.28rem;
 
-  &-light {
-    color: $gray-700;
+  &-pill {
+    border-radius: 10rem;
   }
 }
 
@@ -320,9 +162,17 @@ legend {
 
 // Containers ==================================================================
 
-.card,
 .list-group-item {
-  h1, h2, h3, h4, h5, h6 {
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    color: inherit;
+  }
+}
+
+.card {
+
+  &-title,
+  &-header {
     color: inherit;
   }
 }
