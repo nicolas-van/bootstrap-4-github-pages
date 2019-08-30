@@ -31,8 +31,9 @@ plugins:
 
 # A list of the pages to display in the navigation bar
 header_pages:
+  - theoretical_neuro.html
+  - sound.html
   - about.html
-  - sound_projects.html
   
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
