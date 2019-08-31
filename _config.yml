@@ -32,7 +32,7 @@ plugins:
 # A list of the pages to display in the navigation bar
 header_pages:
   - theoretical_neuro.html
-  - sound.html
+  - sound_projects.html
   - about.html
   
 # Exclude from processing.
