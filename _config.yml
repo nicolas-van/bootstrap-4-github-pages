@@ -35,6 +35,11 @@ header_pages:
   - sound_projects.html
   - about.html
   
+sound_projects:
+  - p1.html
+  - p2.html
+  - p3.html
+  
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
