@@ -31,11 +31,7 @@ plugins:
 
 # A list of the pages to display in the navigation bar
 header_pages:
-  - me.html
-  - projects.html
-  - blog.html
-  - resume.html
-  - art.html
+  - projects.md
   
 # sound_projects:
 #   - p1.html
