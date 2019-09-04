@@ -31,9 +31,11 @@ plugins:
 
 # A list of the pages to display in the navigation bar
 header_pages:
-  - theoretical_neuro.html
-  - sound_projects.html
-  - about.html
+  - me.html
+  - projects.html
+  - blog.html
+  - resume.html
+  - art.html
   
 sound_projects:
   - p1.html
