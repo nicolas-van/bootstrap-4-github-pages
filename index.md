@@ -3,12 +3,8 @@ layout: page
 title: Home
 ---
 
-# Projects
-## Sound
-## Dynamical Systems
-Projects related to dynamical systems
+# Me
 
-## Test
+# Current Interests
 
-# About Me
 
