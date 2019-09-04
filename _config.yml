@@ -37,14 +37,14 @@ header_pages:
   - resume.html
   - art.html
   
-sound_projects:
-  - p1.html
-  - p2.html
-  - p3.html
+# sound_projects:
+#   - p1.html
+#   - p2.html
+#   - p3.html
   
-collections:
-  projects:
-    output: True
+# collections:
+#   projects:
+#     output: True
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
