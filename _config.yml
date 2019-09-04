@@ -42,6 +42,14 @@ sound_projects:
   - p2.html
   - p3.html
   
+collections:
+  neuro:
+    output: True
+  sound:
+    output: True
+  social: 
+    output: True
+  
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
