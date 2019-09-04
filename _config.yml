@@ -33,14 +33,21 @@ plugins:
 header_pages:
   - projects.md
   
-# sound_projects:
-#   - p1.html
-#   - p2.html
-#   - p3.html
+sound_projects:
+  - p1.html
+  - p2.html
+  - p3.html
   
-# collections:
-#   projects:
-#     output: True
+collections:
+  projects:
+    output: True
+
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

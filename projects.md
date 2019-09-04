@@ -7,7 +7,7 @@ title: Projects
 <ul>
   {% for project in site.projects %}
     <li>
-      <h2>{{ project.name }}</h2>
+      <h2><a href="{{ project.url }}">{{ project.name }}</a></h2> 
       <p>{{ project.content | markdownify }}</p>
     </li>
   {% endfor %}
