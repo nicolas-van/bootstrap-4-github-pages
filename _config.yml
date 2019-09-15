@@ -22,12 +22,16 @@ description: >- # this means to ignore newlines until "baseurl:"
 #twitter_username: jekyllrb
 #github_username:  jekyll
 
-repository: "nicolas-van/bootstrap-4-github-pages"
+repository: "dean1012/dean1012.github.io"
 
 # Build settings
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-mentions
+  - jekyll-redirect-from
+  - jekyll-github-metadata
+  - jemoji
 
 # A list of the pages to display in the navigation bar
 header_pages:
