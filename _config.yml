@@ -11,6 +11,7 @@ certification_name: Red Hat Certified Architect IV
 certification_id: 111-064-523
 verify_url: https://verify.jerry-smith.net
 discord_url: https://discord.jerry-smith.net
+bitbucket_url: https://bitbucket.jerry-smith.net
 
 plugins:
   - jekyll-feed
@@ -21,7 +22,7 @@ plugins:
 
 header_pages:
   - index.md
-  - test.md
+  - hire.md
 
 exclude:
   - Gemfile

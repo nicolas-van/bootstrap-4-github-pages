@@ -1,9 +1,8 @@
-
 <div class="py-5 border-top">
   <div id="footer" class="container">
-
     <div class="row">
 
+      <!-- Personal Information -->
       <div class="col-lg-4">
         <ul class="list-unstyled">
           <li>
@@ -41,9 +40,17 @@
             </a>
           </li>
             {%- endif -%}
+            {%- if site.bitbucket_url -%}
+          <li>
+            <i class="fab fa-bitbucket"></i>
+            <a href="{{ site.bitbucket_url }}">
+              Follow me on BitBucket
+            </a>
+          </li>
+            {%- endif -%}
             {%- if site.gpg_key_url -%}
           <li>
-            <i class="fas fa-certificate"></i>
+            <i class="fas fa-shield-alt"></i>
             <a href="{{ site.gpg_key_url }}">
               Download my GPG Public Key
             </a>
@@ -52,6 +59,7 @@
         </ul>
       </div>
 
+      <!-- Payment Information -->
       <div class="col-lg-5">
           <ul class="list-unstyled">
             <li>
@@ -76,6 +84,7 @@
           </ul>
         </div>
 
+        <!-- Certification Information -->
         <div id="certification_info" class="col-lg-3">
             <p>
               <i class="fab fa-redhat"></i>{{- site.certification_name | escape -}}
@@ -87,6 +96,5 @@
           </div>
 
     </div>
-
   </div>
 </div>
