@@ -1,0 +1,30 @@
+// Custom site styles
+
+.fab, .fas {
+  margin-right: 15px;
+  display: inline !important;
+}
+
+.fab.fa-bitcoin {
+  margin-right: 11px;
+}
+
+.fab.fa-redhat {
+  color: red;
+  margin-right: 5px;
+}
+
+.wordwrap {
+  word-break: break-all;
+  -ms-word-break: break-all;
+}
+
+@media screen and (min-width: 992px) {
+  #footer {
+    font-size: 0.85em;
+  }
+
+  #certification_info {
+    text-align: right !important;
+  }
+}

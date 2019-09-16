@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Bootstrap 4 Github Pages
+title: Red Hat Certified Architect
+display_name: About Me
 ---
 
 A [Bootstrap 4](https://getbootstrap.com/) start up project for [Github Pages](https://pages.github.com/) and [Jekyll](https://jekyllrb.com/).

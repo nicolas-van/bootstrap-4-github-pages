@@ -1,87 +1,216 @@
-// This is the place to place Bootstrap-related CSS customizations.
-// As example you can start by importing the _bootswatch.scss file from one of the
-// theme provided by https://bootswatch.com .
-
-// Minty 4.3.1
+// Slate 4.3.1
 // Bootswatch
+
 
 // Variables ===================================================================
 
-$web-font-path: "https://fonts.googleapis.com/css?family=Montserrat" !default;
-@import url($web-font-path);
+@mixin btn-shadow($color){
+  @include gradient-y-three-colors(lighten($color, 6%), $color, 60%, darken($color, 4%));
+  filter: none;
+}
+
+@mixin btn-shadow-inverse($color){
+  @include gradient-y-three-colors(darken($color, 18%), darken($color, 15%), 40%, darken($color, 13%));
+  filter: none;
+}
 
 // Navbar ======================================================================
 
 .navbar {
-  font-family: $headings-font-family;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+
+  .container {
+    padding: 0;
+  }
+
+  .navbar-toggler {
+    border-color: rgba(0, 0, 0, 0.6);
+  }
+
+  &-fixed-top {
+    border-width: 0 0 1px 0;
+  }
+
+  &-fixed-bottom {
+    border-width: 1px 0 0 0;
+  }
+
+  .nav-link {
+    padding: 1rem;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+
+    &:hover,
+    &:focus {
+      @include btn-shadow-inverse($gray-800);
+      border-left: 1px solid rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  &-brand {
+    padding: 0.75rem 1rem calc(54px - 0.75rem - 30px);
+    margin-right: 0;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-item.active .nav-link {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  &-nav .nav-item + .nav-item {
+    margin-left: 0;
+  }
+
+  &.bg-light {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+
+    .nav-link {
+      &:hover,
+      &:focus {
+        @include btn-shadow-inverse($gray-600);
+        border-left: 1px solid rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
 }
 
-.bg-dark {
-  background-color: $secondary !important;
+@media (max-width: 576px) {
+  .navbar-expand-sm {
+    .navbar-brand,
+    .nav-link {
+      border: none !important;
+    }
+  }
 }
 
-.border-dark {
-  border-color: $secondary !important;
+@media (max-width: 768px) {
+  .navbar-expand-md {
+    .navbar-brand,
+    .nav-link {
+      border: none !important;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-expand-lg {
+    .navbar-brand,
+    .nav-link {
+      border: none !important;
+    }
+  }
 }
 
 // Buttons =====================================================================
 
 .btn {
-  font-family: $headings-font-family;
+  border-color: rgba(0, 0, 0, 0.6);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 
-  &,
-  &:hover {
-    color: $white;
+  &:not([disabled]):not(.disabled).active,
+  &.disabled {
+    border-color: rgba(0, 0, 0, 0.6);
+    box-shadow: none;
   }
 
-  &-light,
-  &-light:hover {
-    color: $gray-700;
+  &:hover,
+  &:focus,
+  &:not([disabled]):not(.disabled):active,
+  &:not([disabled]):not(.disabled):active:hover,
+  &:not([disabled]):not(.disabled).active:hover {
+    border-color: rgba(0, 0, 0, 0.6);
   }
+}
 
-  &-link,
-  &-link:hover {
-    color: $primary;
+.btn-primary {
+  @include btn-shadow($primary);
+
+  &:not([disabled]):not(.disabled):hover,
+  &:not([disabled]):not(.disabled):focus,
+  &:not([disabled]):not(.disabled):active:hover,
+  &:not([disabled]):not(.disabled).active:hover {
+    @include btn-shadow-inverse($primary);
   }
+}
 
-  &-link.disabled:hover {
-    color: $gray-600;
+.btn-secondary {
+  @include btn-shadow($secondary);
+
+  &:not([disabled]):not(.disabled):hover,
+  &:not([disabled]):not(.disabled):focus,
+  &:not([disabled]):not(.disabled):active,
+  &:not([disabled]):not(.disabled).active {
+    @include btn-shadow-inverse($secondary);
   }
+}
 
-  &-outline-primary {
-    color: $primary;
+.btn-success {
+  @include btn-shadow($success);
+  color: $white;
+
+  &:not([disabled]):not(.disabled):hover,
+  &:not([disabled]):not(.disabled):focus,
+  &:not([disabled]):not(.disabled):active,
+  &:not([disabled]):not(.disabled).active {
+    @include btn-shadow-inverse($success);
   }
+}
 
-  &-outline-secondary {
-    color: $secondary;
+.btn-info {
+  @include btn-shadow($info);
+  color: $white;
+
+  &:not([disabled]):not(.disabled):hover,
+  &:not([disabled]):not(.disabled):focus,
+  &:not([disabled]):not(.disabled):active,
+  &:not([disabled]):not(.disabled).active {
+    @include btn-shadow-inverse($info);
   }
+}
 
-  &-outline-success {
-    color: $success;
+.btn-warning {
+  @include btn-shadow($warning);
+  color: $white;
+
+  &:not([disabled]):not(.disabled):hover,
+  &:not([disabled]):not(.disabled):focus,
+  &:not([disabled]):not(.disabled):active,
+  &:not([disabled]):not(.disabled).active {
+    @include btn-shadow-inverse($warning);
   }
+}
 
-  &-outline-info {
-    color: $info;
+.btn-danger {
+  @include btn-shadow($danger);
+
+  &:not([disabled]):not(.disabled):hover,
+  &:not([disabled]):not(.disabled):focus,
+  &:not([disabled]):not(.disabled):active,
+  &:not([disabled]):not(.disabled).active {
+    @include btn-shadow-inverse($danger);
   }
+}
 
-  &-outline-warning {
-    color: $warning;
-  }
+.btn-link,
+.btn-link:hover {
+  border-color: transparent;
+}
 
-  &-outline-danger {
-    color: $danger;
-  }
+.btn-group,
+.btn-group-vertical {
 
-  &-outline-dark {
-    color: $dark;
-  }
-
-  &-outline-light {
-    color: $light;
+  .btn.active {
+    border-color: rgba(0, 0, 0, 0.6);
   }
 }
 
 // Typography ==================================================================
+
+h1, h2, h3, h4, h5, h6 {
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+}
 
 // Tables ======================================================================
 
@@ -205,97 +334,132 @@ $web-font-path: "https://fonts.googleapis.com/css?family=Montserrat" !default;
         background-color: $table-active-bg;
       }
     }
-  }
 
-  .thead-dark th {
-    background-color: $primary;
-    border-color: $table-border-color;
-    font-family: $headings-font-family;
   }
 }
 
 // Forms =======================================================================
 
 legend {
-  font-family: $headings-font-family;
+  color: #fff;
+}
+
+.input-group-addon {
+  @include btn-shadow($secondary);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  color: $white;
 }
 
 // Navs ========================================================================
 
-.dropdown-menu {
-  font-family: $font-family-sans-serif;
+.nav-tabs {
+
+  .nav-link {
+    @include btn-shadow-inverse($gray-800);
+    border: 1px solid rgba(0, 0, 0, 0.6);
+
+    &:not([disabled]):not(.disabled):hover,
+    &:not([disabled]):not(.disabled):focus,
+    &:not([disabled]):not(.disabled):active,
+    &:not([disabled]):not(.disabled).active {
+      @include btn-shadow($gray-800);
+    }
+
+    &.disabled {
+      border: 1px solid rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  .nav-link,
+  .nav-link:hover {
+    color: #fff;
+  }
+}
+
+.nav-pills {
+
+  .nav-link {
+    @include btn-shadow($gray-800);
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    color: #fff;
+
+    &:hover {
+      @include btn-shadow-inverse($gray-800);
+      border: 1px solid rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  .nav-link.active,
+  .nav-link:hover {
+    background-color: transparent;
+    @include btn-shadow-inverse($gray-800);
+    border: 1px solid rgba(0, 0, 0, 0.6);
+  }
+
+  .nav-link.disabled,
+  .nav-link.disabled:hover {
+    @include btn-shadow($gray-800);
+    color: $nav-link-disabled-color;
+  }
+}
+
+.pagination {
+
+  .page-link {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    @include btn-shadow($gray-800);
+
+    &:hover {
+      @include btn-shadow-inverse($gray-800);
+      text-decoration: none;
+    }
+  }
+
+  .page-item.active .page-link {
+    @include btn-shadow-inverse($gray-800);
+  }
+
+  .page-item.disabled .page-link {
+    @include btn-shadow($gray-800);
+  }
 }
 
 .breadcrumb {
-  a {
-    color: $navbar-dark-color;
-  }
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  background-color: transparent;
+  @include btn-shadow($gray-800);
 
+  a,
   a:hover {
-    color: $white;
-    text-decoration: none;
+    color: #fff;
   }
 }
 
 // Indicators ==================================================================
 
 .alert {
-  color: $white;
 
-  h1, h2, h3, h4, h5, h6 {
-    color: inherit;
+  .close {
+    color: $close-color;
+    text-decoration: none;
   }
+}
+
+.alert {
+  border: none;
+  color: $white;
 
   a,
   .alert-link {
-    color: $white;
+    color: #fff;
+    text-decoration: underline;
   }
 
-  &-primary {
-    &, > th, > td {
-      background-color: $primary;
-    }
-  }
-
-  &-secondary {
-    &, > th, > td {
-      background-color: $secondary;
-    }
-  }
-
-  &-success {
-    &, > th, > td {
-      background-color: $success;
-    }
-  }
-
-  &-info {
-    &, > th, > td {
-      background-color: $info;
-    }
-  }
-
-  &-danger {
-    &, > th, > td {
-      background-color: $danger;
-    }
-  }
-
-  &-warning {
-    &, > th, > td {
-      background-color: $warning;
-    }
-  }
-
-  &-dark {
-    &, > th, > td {
-      background-color: $dark;
-    }
-  }
-
-  &-light {
-    &, > th, > td {
-      background-color: $light;
+  @each $color, $value in $theme-colors {
+    &-#{$color} {
+      background-color: $value;
     }
   }
 
@@ -303,16 +467,17 @@ legend {
     &,
     & a:not(.btn),
     & .alert-link {
-      color: $body-color;
+      color: $body-bg;
     }
   }
 }
 
 .badge {
-  color: $white;
 
-  &-light {
-    color: $gray-700;
+  &-success,
+  &-warning,
+  &-info {
+    color: $white;
   }
 }
 
@@ -320,9 +485,13 @@ legend {
 
 // Containers ==================================================================
 
-.card,
-.list-group-item {
-  h1, h2, h3, h4, h5, h6 {
-    color: inherit;
+.jumbotron {
+  border: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.list-group {
+
+  &-item:hover {
+    background-color: darken($gray-900, 5%);
   }
 }

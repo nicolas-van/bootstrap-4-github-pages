@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <div class="container">
-    <a class="navbar-brand" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    <a class="navbar-brand" rel="author" href="{{ "/" | relative_url }}"><i class="fab fa-redhat"></i>{{ site.title | escape }}</a>
 
     {%- assign page_paths = site.header_pages -%}
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -12,11 +12,22 @@
         {%- for path in page_paths -%}
           {%- assign my_page = site.pages | where: "path", path | first -%}
           {%- if my_page.title -%}
+            {%- if my_page.display_name -%}
+              {%- assign display_name = my_page.display_name -%}
+            {%- else -%}
+              {%- assign display_name = my_page.title -%}
+            {%- endif -%}
           <li class="nav-item">
-            <a class="nav-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+            <a class="nav-link" href="{{ my_page.url | relative_url }}">{{ display_name | escape }}</a>
           </li>
           {%- endif -%}
         {% endfor -%}
+        <li class="nav-item">
+            <a class="nav-link" href="{{ site.verify_url }}">Verify Certification</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ site.gpg_key_url }}">GPG Public Key</a>
+        </li>
         <li class="nav-item">
           <a class="nav-link" href="{{ site.github.repository_url }}">Fork me on Github</a>
         </li>

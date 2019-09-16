@@ -1,46 +1,31 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Bootstrap 4 Github Pages
-email: ""
-description: >- # this means to ignore newlines until "baseurl:"
-  A Bootstrap 4 start up project for Jekyll and Github Pages
-#baseurl: "" # the subpath of your site, e.g. /blog
-#url: "" # the base hostname & protocol for your site, e.g. http://example.com
-#twitter_username: jekyllrb
-#github_username:  jekyll
-
+title: Jerry Smith
+email: "jsmith@jerry-smith.net"
+description: Jerry Smith - Red Hat Certified Architect IV 111-064-523
 repository: "dean1012/dean1012.github.io"
+github_url: https://github.jerry-smith.net
+gitlab_url: https://gitlab.jerry-smith.net
+bitcoin_address: 32MQsRxDzVcemUZbtWEVgQh2EZZmbGcQfs
+paypal_url: https://payments.jerry-smith.net
+gpg_key_url: https://gpg.jerry-smith.net
+certification_name: Red Hat Certified Architect IV
+certification_id: 111-064-523
+verify_url: https://verify.jerry-smith.net
+discord_url: https://discord.jerry-smith.net
 
-# Build settings
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-mentions
   - jekyll-redirect-from
-  - jekyll-github-metadata
   - jemoji
 
-# A list of the pages to display in the navigation bar
 header_pages:
+  - index.md
+  - test.md
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
 exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
   - update_boostrap.sh
+  - start_test_server.sh

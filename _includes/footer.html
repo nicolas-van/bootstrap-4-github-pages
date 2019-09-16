@@ -1,38 +1,90 @@
 
 <div class="py-5 border-top">
-  <div class="container">
-
-    <p class="h5 mb-3">{{ site.title | escape }}</p>
+  <div id="footer" class="container">
 
     <div class="row">
 
-      <div class="col-sm">
+      <div class="col-lg-4">
         <ul class="list-unstyled">
           <li>
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
+            Personal Information
           </li>
-          {%- if site.email -%}
-            <li>
-              <a href="mailto:{{ site.email }}">
-                {{ site.email }}
-              </a>
-            </li>
-          {%- endif -%}
+            {%- if site.email -%}
+          <li>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:{{ site.email }}">
+              {{ site.email | escape }}
+            </a>
+          </li>
+            {%- endif -%}
+            {%- if site.discord_url -%}
+          <li>
+            <i class="fab fa-discord"></i>
+            <a href="{{ site.discord_url }}">
+              Join me on Discord
+            </a>
+          </li>
+            {%- endif -%}
+            {%- if site.github_url -%}
+          <li>
+            <i class="fab fa-github"></i>
+            <a href="{{ site.github_url }}">
+              Follow me on GitHub
+            </a>
+          </li>
+            {%- endif -%}
+            {%- if site.gitlab_url -%}
+          <li>
+            <i class="fab fa-gitlab"></i>
+            <a href="{{ site.gitlab_url }}">
+              Follow me on GitLab
+            </a>
+          </li>
+            {%- endif -%}
+            {%- if site.gpg_key_url -%}
+          <li>
+            <i class="fas fa-certificate"></i>
+            <a href="{{ site.gpg_key_url }}">
+              Download my GPG Public Key
+            </a>
+          </li>
+            {%- endif -%}
         </ul>
       </div>
 
+      <div class="col-lg-5">
+          <ul class="list-unstyled">
+            <li>
+              Payment Information
+            </li>
+              {%- if site.paypal_url -%}
+            <li>
+              <i class="fab fa-paypal"></i>
+              <a href="{{ site.paypal_url }}">
+                PayPal
+              </a>
+            </li>
+              {%- endif -%}
+              {%- if site.bitcoin_address -%}
+            <li>
+              <i class="fab fa-bitcoin"></i>
+              <a href="bitcoin:{{ site.bitcoin_address }}" class="wordwrap">
+                {{ site.bitcoin_address | escape }}
+              </a>
+            </li>
+              {%- endif -%}
+          </ul>
+        </div>
 
-      <div class="col-sm text-right">
-        <p>{{- site.description | escape -}}</p>
-
-        <p>
-          <a href="https://nicolas-van.github.io/bootstrap-4-github-pages/">Powered by Bootstrap 4 Github Pages</a>
-        </p>
-      </div>
+        <div id="certification_info" class="col-lg-3">
+            <p>
+              <i class="fab fa-redhat"></i>{{- site.certification_name | escape -}}
+              <br />
+              <a href="{{ site.verify_url }}">{{- site.certification_id | escape -}}</a>
+              <br />
+              <a href="https://nicolas-van.github.io/bootstrap-4-github-pages/">Based on Bootstrap 4 Github Pages</a>
+            </p>
+          </div>
 
     </div>
 
