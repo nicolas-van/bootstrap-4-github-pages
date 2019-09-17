@@ -1,0 +1,83 @@
+---
+layout: page
+title: Hire Me
+icon: '<i class="fas fa-file-contract"></i>'
+---
+
+<i class="fab fa-reddit-alien" style="color: #FF5700;"></i>
+<a href="{{ site.testimonials_url }}"><strong>Check out my clients' testimonials on Reddit!</strong></a>
+
+<form action="https://formspree.io/jsmith@jerry-smith.net" method="POST" style="margin-top: 20px;">
+
+  <!-- Hidden Settings -->
+  <input type="hidden" name="_subject" value="Potential New Client" />
+
+  <!-- Security -->
+  <input id="gotcha" type="text" name="_gotcha" />
+
+  <!-- Name -->
+  <div class="input-group">
+    <div class="input-group-prepend">
+      <div class="input-group-text">
+        <i class="fas fa-user-tie fa-form"></i>
+      </div>
+    </div>
+    <input name="" type="text" class="form-control" placeholder="Jane Doe" required>
+  </div>
+
+  <!-- Email -->
+  <div class="input-group">
+    <div class="input-group-prepend">
+      <div class="input-group-text">
+        <i class="fas fa-envelope fa-form"></i>
+      </div>
+    </div>
+    <input name="email" type="email" class="form-control" placeholder="jane@example.com" required>
+  </div>
+
+  <!-- Phone -->
+  <div class="input-group">
+    <div class="input-group-prepend">
+      <div class="input-group-text">
+        <i class="fas fa-phone fa-form"></i>
+      </div>
+    </div>
+    <input name="phone" type="text" class="form-control" placeholder="+1 (555) 867-5309">
+  </div>
+
+  <!-- Payment Terms -->
+  <div class="input-group">
+    <div class="input-group-prepend">
+      <div class="input-group-text">
+        <i class="fas fa-piggy-bank fa-form"></i>
+      </div>
+    </div>
+    <select name="payment_terms" class="selectpicker form-control" data-icon-base="fas" title="How do you prefer to budget?" required>
+      <option data-icon="fa-clock" title="Hourly" value="hourly">Hourly</option>
+      <option data-icon="fa-file-contract" title="Flat Rate" value="flat rate">Flat Rate</option>
+    </select>
+  </div>
+
+  <!-- Preferred Payment Method -->
+  <div class="input-group">
+    <div class="input-group-prepend">
+      <div class="input-group-text">
+        <i class="fas fa-money-check fa-form"></i>
+      </div>
+    </div>
+    <select name="payment_method" class="selectpicker form-control" data-icon-base="fab" title="How do you prefer to pay?" required>
+      <option data-icon="fa-paypal" title="PayPal" value="paypal">PayPal</option>
+      <option data-icon="fa-bitcoin" title="Bitcoin" value="bitcoin">Bitcoin</option>
+    </select>
+  </div>
+
+  <!-- Project Description -->
+  <div class="form-group">
+    <textarea name="description" class="form-control" rows="10" maxlength="5000" placeholder="Tell me about your project" required></textarea>
+    <h6 class="text-right" id="count_message">asdf</h6>
+  </div>
+
+  <!-- Submit -->
+  <button type="submit" class="btn btn-primary w-100">Get in touch!</button>
+
+</form>

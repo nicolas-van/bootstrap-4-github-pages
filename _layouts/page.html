@@ -4,7 +4,12 @@ layout: default
 <article>
 
   <header>
-    <h1>{{ page.title | escape }}</h1>
+    <h1>
+      {%- if page.logo -%}
+        {{ page.logo }}
+      {%- endif -%}
+      {{ page.title | escape }}
+    </h1>
   </header>
 
   <section>

@@ -1,4 +1,4 @@
-// Custom site styles
+// general styles
 
 .fab, .fas {
   margin-right: 15px;
@@ -19,6 +19,14 @@
   -ms-word-break: break-all;
 }
 
+.logo {
+  border-radius: 50%;
+  width: 0.9em;
+  position: relative;
+  top: -3px;
+  margin-right: 15px;
+}
+
 @media screen and (min-width: 992px) {
   #footer {
     font-size: 0.85em;
@@ -28,6 +36,34 @@
     text-align: right !important;
   }
 }
+
+// index page styles
+
+header {
+  margin-bottom: 30px;
+}
+
+h3 {
+  margin-top: 60px;
+}
+
+.tech-expert {
+  background-color: #59c059;
+}
+
+.tech-advanced {
+  background-color: #549058;
+}
+
+.tech-competent {
+  background-color: #4289a0;
+}
+
+.tech-novice {
+  background-color: #585e63;
+}
+
+// hire page styles
 
 .input-group {
   margin-bottom: 20px;
@@ -69,4 +105,5 @@ textarea {
 
 #count_message {
   margin-top: 5px;
+  font-weight: bold;
 }

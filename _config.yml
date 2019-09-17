@@ -1,12 +1,16 @@
+# General site settings
 title: Jerry Smith
 email: "jsmith@jerry-smith.net"
 description: Jerry Smith - Red Hat Certified Architect IV 111-064-523
 repository: "dean1012/dean1012.github.io"
+
+# Site links and information
 github_url: https://github.jerry-smith.net
 gitlab_url: https://gitlab.jerry-smith.net
 bitcoin_address: 32MQsRxDzVcemUZbtWEVgQh2EZZmbGcQfs
 paypal_url: https://payments.jerry-smith.net
 gpg_key_url: https://gpg.jerry-smith.net
+gpg_fingerprint: 4F3E 3BCC D3B8 73A9 3CD6 8FA9 60A5 FCDC 0321 E675
 certification_name: Red Hat Certified Architect IV
 certification_id: 111-064-523
 verify_url: https://verify.jerry-smith.net
@@ -15,6 +19,61 @@ bitbucket_url: https://bitbucket.jerry-smith.net
 testimonials_url: https://testimonials.jerry-smith.net
 reddit_url: https://reddit.jerry-smith.net
 
+# Systems Administration competencies
+sysadmin_competencies:
+  - technology: RHEL 5.0+
+    expertise: expert
+  - technology: Ansible 2.3+
+    expertise: expert
+  - technology: Red Hat Ceph Storage 2.0+
+    expertise: expert
+  - technology: Red Hat OpenShift Container Platform 3.5+
+    expertise: advanced
+  - technology: Red Hat Satellite 6.0+
+    expertise: advanced
+  - technology: Red Hat OpenStack Platform 8+
+    expertise: advanced
+  - technology: Security
+    expertise: advanced
+  - technology: Database Administration
+    expertise: advanced
+  - technology: Python 2+
+    expertise: advanced
+  - technology: Bash
+    expertise: advanced
+  - technology: Red Hat Virtualization 4.1+
+    expertise: competent
+  - technology: Puppet 3.6+
+    expertise: competent
+  - technology: Red Hat CloudForms 4+
+    expertise: competent
+  - technology: Performance Tuning
+    expertise: competent
+
+# Software Engineering competencies
+software_competencies:
+  - technology: HTML 4+
+    expertise: expert
+  - technology: PHP 4+
+    expertise: expert
+  - technology: MariaDB/PostgreSQL/MSSQL/MimerDB
+    expertise: expert
+  - technology: CSS 2+
+    expertise: advanced
+  - technology: ECMAScript (JavaScript) 3+
+    expertise: advanced
+  - technology: jQuery Core 2+
+    expertise: advanced
+  - technology: C/C++
+    expertise: advanced
+  - technology: C#
+    expertise: advanced
+  - technology: Node.js 8+
+    expertise: competent
+  - technology: Web Design
+    expertise: novice
+
+# Jekyll plugins
 plugins:
   - jekyll-feed
   - jekyll-sitemap
@@ -22,10 +81,12 @@ plugins:
   - jekyll-redirect-from
   - jemoji
 
+# Pages to link to in site header
 header_pages:
-  - index.md
-  - hire.md
+  - index.html
+  - hire.html
 
+# Files not to deploy
 exclude:
   - Gemfile
   - Gemfile.lock

@@ -1,0 +1,74 @@
+---
+layout: page
+title: Hello, there!
+display_name: About Me
+icon: <i class="fas fa-id-badge"></i>
+logo: <img class="logo" src="/assets/logo.png" />
+---
+
+<p>
+  My name is Jerry Smith, and I am a <a href="{{ site.verify_url }}">{{ site.certification_name | escape }}</a>.
+</p>
+
+<p>
+  My GPG fingerprint is <a href="{{ site.gpg_key_url }}"><strong>{{ site.gpg_fingerprint | escape }}</strong></a>.
+  Want to swap signatures? <a href="mailto:{{ site.email }}">E-mail me</a>!
+</p>
+
+<p>
+  I am a Red Hat Certified Instructor and Examiner. I have been a Sr. Linux SysAdmin for over ten years with experience in various Software Engineering methodologies.
+</p>
+
+<p>
+  When I am not delivering training courses, I am always looking for new and exciting challenges.
+</p>
+
+<p>
+  If you are <strong>interested in hiring me or discussing your project with me</strong>, please <strong>fill out the form located <a href="/hire.html">here</a></strong> or reach out to me at <a href="mailto:{{ site.email }}">{{ site.email | escape }}</a>.
+</p>
+
+<h3>Linux Systems Administration</h3>
+
+<p>
+  My core competencies in <strong>Linux Systems Administration</strong> include the following:
+</p>
+
+<table class="table table-sm table-dark">
+  <thead>
+    <tr>
+      <th scope="col">Technology</th>
+      <th scope="col">Expertise</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for competency in site.sysadmin_competencies %}
+      <tr>
+        <td class="wordwrap">{{ competency.technology }}</td>
+        <td class="tech-{{ competency.expertise }}">{{ competency.expertise | escape | capitalize }}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<h3>Software Engineering</h3>
+
+<p>
+  My core competencies in <strong>Software Engineering</strong> include the following:
+</p>
+  
+<table class="table table-sm table-dark">
+  <thead>
+    <tr>
+      <th scope="col">Technology</th>
+      <th scope="col">Expertise</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for competency in site.software_competencies %}
+      <tr>
+        <td class="wordwrap">{{ competency.technology }}</td>
+        <td class="tech-{{ competency.expertise }}">{{ competency.expertise | escape | capitalize }}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
