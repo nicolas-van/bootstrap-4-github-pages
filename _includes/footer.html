@@ -24,6 +24,14 @@
             </a>
           </li>
             {%- endif -%}
+            {%- if site.reddit_url -%}
+          <li>
+            <i class="fab fa-reddit-alien"></i>
+            <a href="{{ site.reddit_url }}">
+              Follow me on Reddit
+            </a>
+          </li>
+            {%- endif -%}
             {%- if site.github_url -%}
           <li>
             <i class="fab fa-github"></i>

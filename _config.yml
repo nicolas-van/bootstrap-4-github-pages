@@ -12,6 +12,8 @@ certification_id: 111-064-523
 verify_url: https://verify.jerry-smith.net
 discord_url: https://discord.jerry-smith.net
 bitbucket_url: https://bitbucket.jerry-smith.net
+testimonials_url: https://testimonials.jerry-smith.net
+reddit_url: https://reddit.jerry-smith.net
 
 plugins:
   - jekyll-feed

@@ -28,3 +28,45 @@
     text-align: right !important;
   }
 }
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group-text {
+  width: 52px;
+}
+
+.fa-form {
+  font-size: 1.2em;
+}
+
+#gotcha {
+  display: none;
+}
+
+.btn[data-toggle="dropdown"] {
+  color: #595e63;
+}
+
+.btn[data-toggle="dropdown"].bs_placeholder {
+  color: #7c8389 !important;
+}
+
+.dropdown-toggle,
+.dropdown-toggle:hover,
+.btn-light:not(:disabled):not(.disabled):active,
+.btn-light:not(:disabled):not(.disabled).active,
+.show > .btn-light.dropdown-toggle {
+  border: inherit;
+  text-shadow: inherit;
+  background-color: white;
+}
+
+textarea {
+  resize: none;
+}
+
+#count_message {
+  margin-top: 5px;
+}
