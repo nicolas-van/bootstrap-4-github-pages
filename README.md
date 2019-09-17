@@ -1,16 +1,24 @@
 
-# Boostrap 4 Github Pages
+# https://jerry-smith.net
 
 [![Build Status](https://travis-ci.org/nicolas-van/bootstrap-4-github-pages.svg?branch=master)](https://travis-ci.org/nicolas-van/bootstrap-4-github-pages)
 
-A [Bootstrap 4](https://getbootstrap.com/) start up project for [Github Pages](https://pages.github.com/) and [Jekyll](https://jekyllrb.com/).
+Hi! I'm Jerry Smith and I am a Red Hat Certified Architect.
 
-* A full Bootstrap 4 theme usable both on Github Pages and with a standalone Jekyll.
-* Recompiles Bootstrap from SCSS files, which allows to customize Bootstrap's variables and use Bootstrap themes.
-* Full support of Bootstrap's JavaScript plugins.
-* Supports all features of Github Pages and Jekyll.
+This is my personal website which I've released as an open source project.
 
-[See the website for demonstration and documentation](https://nicolas-van.github.io/bootstrap-4-github-pages/).
+This site utilizes the following technologies:
+
+* [Github Pages](https://pages.github.com/)
+* [Jekyll](https://jekyllrb.com/)
+* [Bootstrap 4](https://getbootstrap.com/)
+* [bootstrap-select](https://developer.snapappointments.com/bootstrap-select/)
+* [Fontawesome](https://fontawesome.com/)
+* [jQuery](https://jquery.com/)
+* [podman](https://podman.io/)
+* [Travis CI](https://travis-ci.org/)
+
+It is based on the [Bootstrap 4 Github Pages](https://github.com/nicolas-van/bootstrap-4-github-pages) project.
 
 ## Contribution
 
