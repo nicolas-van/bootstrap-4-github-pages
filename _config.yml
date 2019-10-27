@@ -17,8 +17,8 @@ title: CookieCon
 email: "sullyut@gmail.com"
 description: >- # this means to ignore newlines until "baseurl:"
   January 13th is the third Annual Cookie Convention and Callahan/Sullivan Wedding Celebration
-#baseurl: "" # the subpath of your site, e.g. /blog
-#url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "cookiecon.org" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 #github_username:  jekyll
 
