@@ -4,7 +4,7 @@ title: Call Assist
 ---
 
 # A Hack RPI start up
-<img style="float: right;" src="environmental.png">
+<img style="float: right;" src="environmental.png";alt="environmental>
 ### https://github.com/callassist/callassist
 ### http://www.hackrpi.com/
 
@@ -13,3 +13,10 @@ A user can send emergency information to dispatch through an android application
 The app sends the user's name, age, location and more to this website.
 The website automatically shows the user's locaiton and the fastest directions to the location using google maps. 
 
+img[alt="environmental"] {
+    -webkit-border-radius: 64px;
+    -moz-border-radius: 64px;
+    -ms-border-radius: 64px;
+    -o-border-radius: 64px;
+    border-radius: 64px;
+}
