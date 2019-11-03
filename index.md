@@ -3,7 +3,8 @@ layout: page
 title: Call Assist
 ---
 
-# A Hack RPI start up
+# Call Assist: A Hack RPI start up
+<img style="padding-top:0px;float: right;" src="callassistlogo.png">
 
 ### https://github.com/callassist/callassist
 ### http://www.hackrpi.com/
