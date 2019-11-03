@@ -15,7 +15,30 @@ layout: default
 		document.write('<body><iframe width="700" height="550" frameborder="0" style="border:0" src=' + testing + ' allowfullscreen></iframe></body>')
 		document.write('<body><iframe src="http://callassist.github.io/callassist/data.php" width="188" height="200" scrolling="no" style="overflow:hidden; margin-top:-4px; margin-left:-4px; border:none;"></iframe></body>')
 	  </script>
-    {{ content }}
+	  <!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+
+		<!-- TODO: Add SDKs for Firebase products that you want to use
+    		 https://firebase.google.com/docs/web/setup#available-libraries -->
+		<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-analytics.js"></script>
+
+	<script>
+  		// Your web app's Firebase configuration
+  		var firebaseConfig = {
+   		 apiKey: "AIzaSyDy9vTCr0r8Dfl7lS6Ryg4siFUeK3l2T7o",
+    		authDomain: "lively-sentry-257818.firebaseapp.com",
+    		databaseURL: "https://lively-sentry-257818.firebaseio.com",
+    		projectId: "lively-sentry-257818",
+    		storageBucket: "lively-sentry-257818.appspot.com",
+    		messagingSenderId: "377386852893",
+    		appId: "1:377386852893:web:f24c1dccd8a70e38509cf4",
+    		measurementId: "G-11HWEX0PQ5"
+  		};
+  		// Initialize Firebase
+  		firebase.initializeApp(firebaseConfig);
+  		firebase.analytics();
+	</script>
+    	{{ content }}
   </section>
 
 </article>
