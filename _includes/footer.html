@@ -9,9 +9,9 @@
         <ul class="list-unstyled">
           <li>
             {%- if site.author -%}
-              {{ site.author | escape }}
+              {{ "Call Assist" | escape }}
             {%- else -%}
-              {{ site.title | escape }}
+              {{ "Call Assist" | escape }}
             {%- endif -%}
           </li>
           {%- if site.email -%}
@@ -28,9 +28,7 @@
       <div class="col-sm text-right">
         <p>{{- site.description | escape -}}</p>
 
-        <p>
-          <a href="https://nicolas-van.github.io/bootstrap-4-github-pages/">Powered by Bootstrap 4 Github Pages</a>
-        </p>
+
       </div>
 
     </div>
