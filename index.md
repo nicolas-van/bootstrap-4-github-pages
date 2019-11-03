@@ -4,7 +4,7 @@ title: Call Assist
 ---
 
 # Call Assist: A Hack RPI start up
-<img style="padding-top:0px;float: right;" src="callassistlogo.png">
+<img style="padding-top:0px;float: right;" src="callassistlogo.png" width="326" height="240">
 
 ### https://github.com/callassist/callassist
 ### http://www.hackrpi.com/
