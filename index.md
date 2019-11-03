@@ -12,3 +12,4 @@ A user can send emergency information to dispatch through an android application
 The app sends the user's name, age, location and more to this website.
 The website automatically shows the user's locaiton and the fastest directions to the location using google maps. 
 
+<img src="environmental.png" alt="logo" />
