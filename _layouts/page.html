@@ -63,6 +63,8 @@ layout: default
         document.getElementById("lon").innerHTML = "Lon: " + important_data.lon;
         x_coordinate = important_data.lat;
         y_coordinate = important_data.lon;
+        x_coordinate = 42.7281437;
+        y_coordinate = -73.6792508;
       });
       testing = "https://www.google.com/maps/embed/v1/directions?origin=place_id:ChIJrzp1OwgP3okRignSgE0M10Y&destination=" + x_coordinate + "%2C%20" + y_coordinate + "&key=AIzaSyAzFAtJf0Xcx86yFyxaYhPbr5CFJMBQEfI";
       document.write('<body><iframe width="700" height="550" frameborder="0" style="border:0" src=' + testing + ' allowfullscreen></iframe></body>');
