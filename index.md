@@ -12,9 +12,3 @@ The website automatically shows the user's locaiton and the fastest directions t
 ## Natural Disaster and Mitigation
 
 Create an idea that helps first responders and/or civilians tackle the problems around identification of disasters and mitigating risks to build a sustainable society. You can even explore the idea of creating a solution that helps to address health and well-being.
-
-var ref = firebase.database().ref();
-var name = 'John';
-var age = '21';
-var lat = '75.6';
-var long = '80.9';
