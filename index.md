@@ -2,7 +2,7 @@
 layout: page
 title: Call Assist
 ---
-<img src="callassistlogo.png"
+<img src="https://imgur.com/gallery/eKUo3Ww"
      alt="Call Assist icon"
      style="float: left; margin-right: 10px;" />
 
