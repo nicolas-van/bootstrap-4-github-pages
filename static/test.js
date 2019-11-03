@@ -8,7 +8,7 @@ function saveToFirebase(email) {
     service.rootRef = firebase.database();
     firebase.database().ref('subscription-entries').push().set(emailObject)
         .then(function(snapshot) {
-            success(); // some success method
+            //success(); // some success method
         }, function(error) {
             console.log('error' + error);
             error(); // some error method
