@@ -4,7 +4,7 @@ title: Call Assist
 ---
 
 # A Hack RPI start up
-## https://github.com/callassist/callassist
+### https://github.com/callassist/callassist
 ### http://www.hackrpi.com/
 
 This project is designed to help first responders aid civilians in the event of a medical emergency. 
