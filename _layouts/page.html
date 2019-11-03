@@ -51,8 +51,8 @@ layout: default
       var testing;
       var ref = firebase.database().ref();
       var important_data = new Object()
-      var x_coordinate = 42.7313472;
-      var y_coordinate = -73.6796534;
+      var x_coordinate = 42.7281437;
+      var y_coordinate = -73.6792508;
       var onValueChange = ref.once("value").then( function(snapshot) {
         important_data = snapshot.val();
         console.log(important_data);
