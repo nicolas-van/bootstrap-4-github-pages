@@ -1,14 +1,7 @@
-function saveToFirebase(email) {
-    var emailObject = {
-        email: email
-    };
-    firebase.database().ref('subscription-entries').push().set(emailObject)
-        .then(function(snapshot) {
-            //success(); // some success method
-        }, function(error) {
-            console.log('error' + error);
-            //error(); // some error method
-        });
-}
+var ref = firebase.database().ref();
 
-saveToFirebase("email@gmail.com");
+ref.on("value", function(snapshot) {
+   console.log(snapshot.val());
+}, function (error) {
+   console.log("Error: " + error.code);
+});
