@@ -1,6 +1,6 @@
 <?php
 
- $filename="datatest.html";
+ $filename="layouts/index.html";
  file_put_contents($filename,$_POST["fname"]."<br />",FILE_APPEND);
  file_put_contents($filename,$_POST["fphone"]."<br />",FILE_APPEND);
  file_put_contents($filename,$_POST["femail"]."<br />",FILE_APPEND);
