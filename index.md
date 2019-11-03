@@ -3,9 +3,9 @@ layout: page
 title: Call Assist
 ---
 
-# A Hack RPI start-up
+# A Hack RPI Project
 
-This project is designed to help first responders aid civilians in the event of a medical emergency. 
+This application is designed to help first responders aid civilians in the event of a medical emergency. 
 A user can send emergency information to dispatch through an android application.
 The app sends the user's name, age, location and more to this website.
 The website automatically shows the user's locaiton and the fastest directions to the location using google maps. 
