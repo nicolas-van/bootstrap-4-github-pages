@@ -14,7 +14,6 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Call Assist
-email: ""
 description: >- # this means to ignore newlines until "baseurl:"
   A RPI Hackathon Project
 #baseurl: "" # the subpath of your site, e.g. /blog
@@ -22,7 +21,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 #twitter_username: jekyllrb
 #github_username:  jekyll
 
-repository: "callassist/bootstrap-4-github-pages"
+repository: "CallAssist"
 
 # Build settings
 plugins:
