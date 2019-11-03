@@ -51,7 +51,7 @@ layout: default
       var testing;
       var ref = firebase.database().ref();
       var important_data = new Object()
-      var x_coordinate = 42.7281437;
+      var x_coordinate = 42.7291437;
       var y_coordinate = -73.6792508;
       var onValueChange = ref.once("value").then( function(snapshot) {
         important_data = snapshot.val();
@@ -63,7 +63,7 @@ layout: default
         document.getElementById("lon").innerHTML = "Lon: " + important_data.lon;
         x_coordinate = important_data.lat;
         y_coordinate = important_data.lon;
-        x_coordinate = 42.7281437;
+        x_coordinate = 42.7291437;
         y_coordinate = -73.6792508;
       });
       testing = "https://www.google.com/maps/embed/v1/directions?origin=place_id:ChIJrzp1OwgP3okRignSgE0M10Y&destination=" + x_coordinate + "%2C%20" + y_coordinate + "&key=AIzaSyAzFAtJf0Xcx86yFyxaYhPbr5CFJMBQEfI";
