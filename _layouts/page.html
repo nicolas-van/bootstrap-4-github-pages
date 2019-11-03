@@ -44,10 +44,6 @@ layout: default
       important_data = snapshot.val()
       console.log(important_data.data);
       important_data = important_data.data;
-      document.getElementById("text").innerHTML = important_data.name;
-      document.getElementById("text").innerHTML = important_data.age;
-      document.getElementById("text").innerHTML = important_data.lat;
-      document.getElementById("text").innerHTML = important_data.lon;
       var x_coordinate = important_data.lat;
       var y_coordinate = important_data.lon;
       var testing = "https://www.google.com/maps/embed/v1/directions?origin=place_id:ChIJc4cQTKcP3okRPHKk9fl-ETM&destination=" + x_coordinate + "%2C%20" + y_coordinate + "&key=AIzaSyAzFAtJf0Xcx86yFyxaYhPbr5CFJMBQEfI";
