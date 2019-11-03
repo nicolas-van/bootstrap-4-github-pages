@@ -1,9 +1,13 @@
 <?php
-
- $filename="layouts/index.html";
- file_put_contents($filename,$_POST["fname"]."<br />",FILE_APPEND);
- file_put_contents($filename,$_POST["fphone"]."<br />",FILE_APPEND);
- file_put_contents($filename,$_POST["femail"]."<br />",FILE_APPEND);
- file_put_contents($filename,$_POST["fcomment"]."<br />",FILE_APPEND);
- $msg=file_get_contents($filename);
- echo $msg; ?>
+// if text data was posted
+if($_POST){
+    print_r($_POST);
+}
+ 
+// if a file was posted
+else if($_FILES){
+    $file = $_FILES['file'];
+    $fileContents = file_get_contents($file["tmp_name"]);
+    print_r($fileContents);
+}
+?>
