@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Bootstrap 4 Github Pages
+title: Call Assist
 ---
 
-A [Bootstrap 4](https://getbootstrap.com/) start up project for [Github Pages](https://pages.github.com/) and [Jekyll](https://jekyllrb.com/).
+A [Hack RPI](http://www.hackrpi.com/) start up project designed to help first responders aid civilians.
 
 * A full Bootstrap 4 theme usable both on Github Pages and with a standalone Jekyll.
 * Recompiles Bootstrap from SCSS files, which allows to customize Bootstrap's variables and use Bootstrap themes.
