@@ -2,7 +2,9 @@
 layout: page
 title: Call Assist
 ---
-![Call Assist Logo][callassistlogo.png]
+<img src="markdownmonstericon.png"
+     alt="Markdown Monster icon"
+     style="float: left; margin-right: 10px;" />
 
 A [Hack RPI](http://www.hackrpi.com/) start up project designed to help first responders aid civilians.
 
