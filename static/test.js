@@ -11,7 +11,7 @@ function saveToFirebase(email) {
             //success(); // some success method
         }, function(error) {
             console.log('error' + error);
-            error(); // some error method
+            //error(); // some error method
         });
 }
 
