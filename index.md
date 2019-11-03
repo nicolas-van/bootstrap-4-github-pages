@@ -3,7 +3,10 @@ layout: page
 title: Call Assist
 ---
 
-## A Hack RPI (http://www.hackrpi.com/) start up
+# A Hack RPI start up
+## https://github.com/callassist/callassist
+### http://www.hackrpi.com/
+
 This project is designed to help first responders aid civilians in the event of a medical emergency. 
 A user can send emergency information to dispatch through an android application.
 The app sends the user's name, age, location and more to this website.
