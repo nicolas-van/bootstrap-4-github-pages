@@ -1,0 +1,48 @@
+---
+layout: default
+---
+<article>
+
+  <header>
+    <h1>{{ page.title | escape }}</h1>
+  </header>
+
+  <section>
+	<script>
+		var x_coordinate = '42.6526';
+		var y_coordinate = '-73.7562';
+		var testing = "https://www.google.com/maps/embed/v1/directions?origin=current+location&destination=" + x_coordinate + "%2C%20" + y_coordinate + "&key=AIzaSyAzFAtJf0Xcx86yFyxaYhPbr5CFJMBQEfI";
+		document.write('<body><iframe width="700" height="550" frameborder="0" style="border:0" src=' + testing + ' allowfullscreen></iframe></body>')
+		document.write('<body><iframe src="http://callassist.github.io/callassist/data.php" width="188" height="200" scrolling="no" style="overflow:hidden; margin-top:-4px; margin-left:-4px; border:none;"></iframe></body>')
+	  </script>
+	  <!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+
+		<!-- TODO: Add SDKs for Firebase products that you want to use
+    		 https://firebase.google.com/docs/web/setup#available-libraries -->
+		<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-analytics.js"></script>
+	  	<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-database.js"></script>
+	  	<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase.js"></script>
+
+	<script>
+  		// Your web app's Firebase configuration
+  		var firebaseConfig = {
+   		 apiKey: "AIzaSyDy9vTCr0r8Dfl7lS6Ryg4siFUeK3l2T7o",
+    		authDomain: "lively-sentry-257818.firebaseapp.com",
+    		databaseURL: "https://lively-sentry-257818.firebaseio.com",
+    		projectId: "lively-sentry-257818",
+    		storageBucket: "lively-sentry-257818.appspot.com",
+    		messagingSenderId: "377386852893",
+    		appId: "1:377386852893:web:f24c1dccd8a70e38509cf4",
+    		measurementId: "G-11HWEX0PQ5"
+  		};
+  		// Initialize Firebase
+  		firebase.initializeApp(firebaseConfig);
+  		firebase.analytics();
+	</script>
+	  <script type="text/javascript" src="https://callassist.github.io/callassist/static/test.js"></script>
+    	{{ content }}
+  </section>
+
+</article>
