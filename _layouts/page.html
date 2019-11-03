@@ -2,11 +2,14 @@
 layout: default
 ---
 <article>
+  <style>
+    h3   {color: grey;}
+</style>
   <header>
     <h1 id="text">{{ page.title | escape }}</h1>
     <h1 id="name"></h1>
-    <h3 id="lat"></h3>
-    <h3 id="lon"></h3>
+    <h5 id="lat"></h5>
+    <h5 id="lon"></h5>
 
   </header>
 
@@ -56,7 +59,7 @@ layout: default
         console.log(important_data);
         important_data = important_data.data;
         console.log(important_data);
-        document.getElementById("name").innerHTML = "Name: " + important_data.name + "     Age: " + important_data.age;
+        document.getElementById("name").innerHTML = "Name: " + important_data.name + "            Age: " + important_data.age;
         document.getElementById("lat").innerHTML = "Lat: " + important_data.lat;
         document.getElementById("lon").innerHTML = "Lon: " + important_data.lon;
         x_coordinate = important_data.lat;
