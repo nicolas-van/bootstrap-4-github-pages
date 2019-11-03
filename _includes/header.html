@@ -1,23 +1,18 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <div class="container">
-    <a class="navbar-brand" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+<div class="header">
+  <img src="callassist.png" alt="logo" />
+  <h1>My website name</h1>
+</div>
+<style>
+  .header img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: #555;
+}
 
-    {%- assign page_paths = site.header_pages -%}
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        {%- for path in page_paths -%}
-          {%- assign my_page = site.pages | where: "path", path | first -%}
-          {%- if my_page.title -%}
-          {%- endif -%}
-        {% endfor -%}
-        <li class="nav-item">
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<img src="callassist.png" alt="Call Assist Logo">
+.header h1 {
+  position: relative;
+  top: 18px;
+  left: 10px;
+}
+</style>
