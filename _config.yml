@@ -16,7 +16,7 @@
 title: William Moore
 email: ""
 description: >- # this means to ignore newlines until "baseurl:"
-  A Bootstrap 4 start up project for Jekyll and Github Pages
+  Portfolio of William Moore
 #baseurl: "" # the subpath of your site, e.g. /blog
 #url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: will2bill
@@ -31,6 +31,12 @@ plugins:
 
 # A list of the pages to display in the navigation bar
 header_pages:
+  - CV
+  - Development
+  - Games
+  - Writing
+  - Art
+  - Blog
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

@@ -3,9 +3,11 @@
 
 
 
-
 ### Run Locally
 
 	docker-compose up
-	
-Courtesy of: [docker-github-pages](https://github.com/Starefossen/docker-github-pages)
+
+### Credits
+- Theme: [pulse](https://bootswatch.com/pulse/)
+- Forked from: [bootstrap-4-github-pages](https://github.com/nicolas-van/bootstrap-4-github-pages)
+- docker-compose based on: [docker-github-pages](https://github.com/Starefossen/docker-github-pages)
