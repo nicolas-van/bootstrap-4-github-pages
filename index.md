@@ -2,4 +2,12 @@
 layout: page
 title: William Moore
 ---
-*I am a Site Reliability Engineer currently working at Kobalt Music.*
+*Site Reliability Engineer, Game Designer, and Writer.*
+
+### Game Design
+
+### Programming
+
+### Writing
+
+### Artwork
