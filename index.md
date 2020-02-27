@@ -100,6 +100,10 @@ Like this project ? [Consider adding a star on Github](https://github.com/nicola
 * [borislouis.github.io](https://borislouis.github.io/)
 * [dariusnwadike.github.io](https://dariusnwadike.github.io/)
 
-## Other projects
+## Other Github Pages related projects
 
-[Easy Markdown to Github Pages](https://nicolas-van.github.io/easy-markdown-to-github-pages/) which documents how to publish Markown files to Github Pages in the fastest way.
+I'm a fan of Github Pages for the possibilities it offers to anyone to publish a website for free. I have multiple projects that could be of interest if that's your case too:
+
+* [Easy Markdown to Github Pages](https://nicolas-van.github.io/easy-markdown-to-github-pages/)
+* [Parcel Github Pages Boilerplate](https://github.com/nicolas-van/parcel-github-pages-boilerplate)
+
