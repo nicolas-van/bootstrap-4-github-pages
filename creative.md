@@ -27,3 +27,7 @@ and on my [Twitter](https://twitter.com/will2bill/status/1171901412697096193){:t
 - I also have some art on my [twitter](https://twitter.com/will2bill/media){:target="_blank"}, in particular 
 [this thread](https://twitter.com/will2bill/status/1171901412697096193){:target="_blank"} and my 
 [instagram](https://www.instagram.com/will42bill/){:target="_blank"}. 
+
+#### Videos
+- Animation work, Videos from my games, and of course, cat videos can be found on my 
+[Youtube](https://www.youtube.com/user/WillTwoBill/videos){:target="_blank"}.

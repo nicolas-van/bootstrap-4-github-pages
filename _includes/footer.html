@@ -2,19 +2,10 @@
 <div class="py-5 border-top">
   <div class="container">
 
-    <p class="h5 mb-3">{{ site.title | escape }}</p>
-
     <div class="row">
 
       <div class="col-sm">
         <ul class="list-unstyled">
-          <li>
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-          </li>
           {%- if site.email -%}
             <li>
               <a href="mailto:{{ site.email }}">
@@ -22,15 +13,27 @@
               </a>
             </li>
           {%- endif -%}
+          <li>
+              <a href="https://twitter.com/will2bill" target="_blank">
+                <img src="../assets/images/twitter.png" >
+              </a>
+              <a href="https://will2bill.tumblr.com/" target="_blank">
+                <img src="../assets/images/tumblr.png" >
+              </a>
+              <a href="https://www.instagram.com/will42bill/" target="_blank">
+                  <img src="../assets/images/instagram.png" >
+              </a>
+              <a href="https://www.linkedin.com/in/will2bill/" target="_blank">
+                  <img src="../assets/images/linkedin.png" >
+              </a>
+          </li>
         </ul>
       </div>
 
-
       <div class="col-sm text-right">
-        <p>{{- site.description | escape -}}</p>
-
         <p>
-          <a href="https://nicolas-van.github.io/bootstrap-4-github-pages/">Powered by Bootstrap 4 Github Pages</a>
+          <a href="https://nicolas-van.github.io/bootstrap-4-github-pages/" target="_blank">Powered by Bootstrap 4 Github Pages</a>
+          <a href="https://github.com/will2bill/will2bill.github.io" target="_blank">Website Repository</a>
         </p>
       </div>
 
