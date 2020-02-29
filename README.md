@@ -4,8 +4,17 @@
 
 
 ### Run Locally
+Run via docker (should update with most changes):
 
-	docker-compose up
+	make run
+	
+Recreate docker container to ensure all changes up:
+
+    make refresh
+
+Take down docker container
+
+    make down
 
 ### Credits
 - Theme: [pulse](https://bootswatch.com/pulse/)
@@ -54,6 +63,3 @@ What I have currently:
   - A kind of shittier version of my CV
 - Contact
   - Social links and embedded twitter. Plus my email
-
-
-![My face]()
