@@ -1,21 +1,59 @@
 
-# Boostrap 4 Github Pages
+# Personal Website for William Moore
 
-[![Build Status](https://travis-ci.org/nicolas-van/bootstrap-4-github-pages.svg?branch=master)](https://travis-ci.org/nicolas-van/bootstrap-4-github-pages)
 
-A [Bootstrap 4](https://getbootstrap.com/) start up project for [Github Pages](https://pages.github.com/) and [Jekyll](https://jekyllrb.com/).
 
-* A full Bootstrap 4 theme usable both on Github Pages and with a standalone Jekyll.
-* Recompiles Bootstrap from SCSS files, which allows to customize Bootstrap's variables and use Bootstrap themes.
-* Full support of Bootstrap's JavaScript plugins.
-* Supports all features of Github Pages and Jekyll.
+### Run Locally
 
-[See the website for demonstration and documentation](https://nicolas-van.github.io/bootstrap-4-github-pages/).
+	docker-compose up
 
-## Contribution
+### Credits
+- Theme: [pulse](https://bootswatch.com/pulse/)
+- Forked from: [bootstrap-4-github-pages](https://github.com/nicolas-van/bootstrap-4-github-pages)
+- docker-compose based on: [docker-github-pages](https://github.com/Starefossen/docker-github-pages)
 
-[See the contribution guide.](./CONTRIBUTING.md)
+### Planning
+Inspiration: [Adam O'Grady's personal website](https://adamogrady.id.au/)
+What it has:
+- social media links
+- 'Personal' - a personal blog
+- 2 blogs
+- RSS
 
-## License
+What I need:
+- CV/History - maybe
+- Links (personal accounts, linkedin and such)
+  - Github link
+- Writing
+  - blog, probably not worth creating a new one just yet. Or if I want it, it doesn't have to be in this run
+- Development projects (aka Github, not much more than a link though)
+- Games
+- Art (under links?)
+- Need a page that is will2bill.com/games as that's on my CV and I don't want to break links ideally
 
-[See the license file.](./LICENSE.md)
+Maybe:
+- Home
+- Development
+- Creative Work
+- History/About
+- Shop may still be a good thing to have?
+
+
+What I have currently:
+- Home
+  - listing out each of the sections with a bit about them
+- Writing
+  - Lists of individual pieces, hosting that work on the site itself.
+- Games
+  - List of games, with links to their github and their gameplay videos
+- Art Gallery
+  - Individual pieces, hosted on the site, displayed in kind of an awful format
+- Store
+  - Links to my two stores, Society6 and Deviantart
+- About
+  - A kind of shittier version of my CV
+- Contact
+  - Social links and embedded twitter. Plus my email
+
+
+![My face]()
