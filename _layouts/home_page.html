@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<article>
+
+  <header>
+    {%- if page.image -%}
+    <div class="home post-image mb-3">
+      <img src="{{ page.image | relative_url }}">
+    </div>
+    {%- endif %}
+    <div class="home"><h1>{{ page.title | escape }}</h1></div>
+    <div class="home"><code>{{ page.subtitle | escape }}</code></div>
+  </header>
+
+  <section>
+    <div class="home">{{ content }}</div>
+  </section>
+
+</article>

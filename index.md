@@ -1,13 +1,11 @@
 ---
-layout: page
+layout: home_page
 title: William Moore
+subtitle: Site Reliability Engineer, Game Designer, Writer & Artist
+image: /assets/images/icon.png
 ---
-*Site Reliability Engineer, Game Designer and Writer*
 
-### Game Design
-
-### Programming
-
-### Writing
-
-### Artwork
+##### [Development](/dev)
+##### [Creative Work](/creative)
+##### [History](/me)
+##### [Store](/store)
