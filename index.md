@@ -5,7 +5,7 @@ subtitle: Site Reliability Engineer, Game Designer, Writer & Artist
 image: /assets/images/icon.png
 ---
 
-##### [Development](/dev)
+##### [Development](https://github.com/will2bill){:target="_blank"}
 ##### [Creative Work](/creative)
-##### [History](/me)
+##### [Resume](/assets/Resume.pdf){:target="_blank"}
 ##### [Store](/store)
