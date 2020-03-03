@@ -1,4 +1,16 @@
-# Contribution Guide
+# Contributing to this project
+
+* [Contributors Agreement](#user-content-contributors-agreement)
+* [Introduction](#Introduction)
+  * [I don't want to read this whole thing I just have a question!!!](#user-content-i-dont-want-to-read-this-whole-thing-i-just-have-a-question)
+* [How Can I Contribute?](#user-content-how-can-i-contribute)
+  * [Reporting Bugs](#user-content-reporting-bugs)
+  * [Suggesting Enhancements](#user-content-suggesting-enhancements)
+  * [Creating Pull Requests](#user-content-creating-pull-requests)
+  
+## Contributors Agreement
+
+By submitting patches to this project you agree to allow them to be redistributed under the project's license, according to the normal forms and usages of the open-source community.
 
 ## Introduction
 
@@ -65,8 +77,9 @@ Enhancement suggestions are tracked as [GitHub issues](https://guides.github.com
 
 #### How Do I Submit A (Good) Pull Request?
 
+* **Be warned that the contributors agreement displayed on top of this document is applicable as soon as you create a pull request**.
 * **Use a clear and descriptive title** for the pull request to state the improvement you made to the code or the bug you solved.
 * **Provide a link to the related issue** if the pull request is a follow up of an existing bug report or enhancement suggestion.
 * **Comment why this pull request represents an enhancement** and give a rationale explaining why you did it that way and not another way.
 * **Use the same coding style than the one used in this project**.
-* **Welcome suggestions from the maintainers to improve your pull request**.
+* **Welcome suggestions from the maintainers to improve your pull request**. 
