@@ -12,11 +12,11 @@ A [Bootstrap 4](https://getbootstrap.com/) start up project for [Github Pages](h
 
 ## Setup Guide
 
-### Fork this repository
+### Create a repository from this template
 
-[Go to this repository page on Github](https://github.com/nicolas-van/bootstrap-4-github-pages) and click the `Fork` button on the top right of the page.
+[Go to this repository page on Github](https://github.com/nicolas-van/bootstrap-4-github-pages) and click the `Use this template` button on the top right of the page.
 
-### Rename your forked repository
+### Choose a name for your repository
 
 Here we have two possibilities:
 
@@ -24,13 +24,13 @@ Here we have two possibilities:
 
   In this case your website's URL will be `http://<your username>.github.io` where `<your username>` is your Github user name.
 
-  Go in the `Settings` page of your repository and rename it to `<your username>.github.io`.
+  Choose the repository name `<your username>.github.io`.
 
 * **You want a project website**
 
   In this case your website's URL will be `http://<your username>.github.io/<whatever you want>` where `<whatever you want>` can be any valid name for a Github repository.
 
-  Go in the `Settings` page of your repository and rename it to `<whatever you want>`.
+  Choose the repository name `<whatever you want>`.
 
 ### Activate Github Pages on your repository
 
