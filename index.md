@@ -94,11 +94,11 @@ Like this project ? [Consider adding a star on Github](https://github.com/nicola
 
 * [My personal blog](https://nicolas-van.github.io/)
 * [the wavelet's profile](https://thewavelet.github.io/)
+* [William Moore's website](https://will2bill.com/)
 * [roseblood.github.io](https://roseleblood.github.io/)
-* [colemannick.github.io](https://colemannick.github.io/)
-* [Betty and the Blushtones](http://bettyandtheblushtones.co.uk/)
 * [borislouis.github.io](https://borislouis.github.io/)
 * [dariusnwadike.github.io](https://dariusnwadike.github.io/)
+* [libcoap.net](https://libcoap.net/)
 
 ## Other Github Pages related projects
 
